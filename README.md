@@ -5,13 +5,16 @@ yii2-qiwi-basic
 
 ## Установка
 
-1. Скопировать файлы в vendor/ribris/yii2-qiwi-basic
+1. Скопировать файлы в **vendor/ribris/yii2-qiwi-basic**
 
-2. В файл config/web.php добавить: 
+2. В файл **config/web.php** добавить: 
+```php
     Yii::$classMap['ribris\qiwi\Qiwi'] = '@app/vendor/ribris/yii2-qiwi-basic/Qiwi.php';
     Yii::$classMap['ribris\qiwi\QiwiServer'] = '@app/vendor/ribris/yii2-qiwi-basic/QiwiServer.php';
+```
 
-3. В файл config/params.php добавить: 
+3. В файл **config/params.php** добавить: 
+```php
     return [
         // параметры...
 
@@ -21,7 +24,7 @@ yii2-qiwi-basic
         'QIWI_REST_PWD' => 'ваш rest пароль',
         'QIWI_NOTIFICATION_PWD' => 'ваш пароль для уведомлений',
     ];
-
+```
 
 ## Использование:
 
