@@ -35,7 +35,6 @@ use ribris\qiwi\Qiwi;
 
 class QiwiController
 {
-    public $enableCsrfValidation = false;
 
     public function actionCreateBill()
     {
@@ -65,6 +64,8 @@ use ribris\qiwi\QiwiServer;
 
 class QiwiController
 {
+
+    public $enableCsrfValidation = false;
 
     //...
 
